@@ -1,5 +1,5 @@
 %define	version 0.1.1.20080823
-%define	release %mkrel 2
+%define	release %mkrel 3
 
 Name:      ibus-m17n
 Summary:   ibus - m17n engine
