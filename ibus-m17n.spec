@@ -1,5 +1,5 @@
 %define	version 0.1.1.20080823
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-m17n
 Summary:   ibus - m17n engine
@@ -10,7 +10,7 @@ License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: m17n-lib-devel
+BuildRequires: m17n-lib-devel m17n-db
 BuildRequires: python-devel
 BuildRequires: swig
 Requires:	ibus
@@ -39,3 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_datadir}/%{name}
 %{python_sitearch}/*
+%{_datadir}/ibus/engine/*
