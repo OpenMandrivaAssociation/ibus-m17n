@@ -1,5 +1,5 @@
-%define	version 0.1.1.20080823
-%define	release %mkrel 3
+%define	version 0.1.1.20080901
+%define	release %mkrel 1
 
 Name:      ibus-m17n
 Summary:   ibus - m17n engine
@@ -14,6 +14,7 @@ BuildRequires: m17n-lib-devel m17n-db
 BuildRequires: python-devel
 BuildRequires: swig
 Requires:	ibus
+Requires:	m17n-lib
 
 %description
 ibus - M17N engine.
