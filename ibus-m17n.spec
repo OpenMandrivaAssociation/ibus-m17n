@@ -11,9 +11,7 @@ URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: m17n-lib-devel m17n-db
-BuildRequires: python-devel
 BuildRequires: ibus-devel >= 1.1.0
-BuildRequires: swig
 Requires:	ibus >= 1.1.0
 Requires:	m17n-lib
 
@@ -40,5 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_libexecdir}/*
 %{_datadir}/%{name}
-%{python_sitearch}/*
 %{_datadir}/ibus/component/*.xml
