@@ -1,4 +1,4 @@
-%define	version 1.2.0.20090930
+%define	version 1.2.0.20091120
 %define	release %mkrel 1
 
 Name:      ibus-m17n
