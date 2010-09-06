@@ -12,6 +12,7 @@ Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: m17n-lib-devel m17n-db
 BuildRequires: ibus-devel >= 1.3.0
+BuildRequires: gtk+2-devel
 Requires:	ibus >= 1.3.0
 Requires:	m17n-lib
 
