@@ -1,4 +1,4 @@
-%define	version 1.3.0
+%define	version 1.3.1
 %define	release %mkrel 1
 
 Name:      ibus-m17n
@@ -36,6 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{_libexecdir}/ibus-engine-*
+%{_libexecdir}/ibus-*
 %{_datadir}/%{name}
 %{_datadir}/ibus/component/*.xml
