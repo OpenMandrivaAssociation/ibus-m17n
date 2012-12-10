@@ -28,7 +28,7 @@ ibus - M17N engine.
 %make
 
 %install
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 %find_lang %name
@@ -166,10 +166,88 @@ rm -rf %{buildroot}
 %preun_ibus_unregister_engine m17n:as:itrans
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
 %{_libexecdir}/ibus-*
 %{_datadir}/%{name}
 %{_datadir}/ibus/component/*.xml
+
+
+%changelog
+* Fri May 06 2011 Funda Wang <fwang@mandriva.org> 1.3.2-3mdv2011.0
++ Revision: 669829
+- rebuild
+
+* Tue Apr 26 2011 Funda Wang <fwang@mandriva.org> 1.3.2-2
++ Revision: 659323
+- rebuild for new ibus
+
+* Mon Mar 14 2011 Sandro Cazzaniga <kharec@mandriva.org> 1.3.2-1
++ Revision: 644704
+- update to 1.3.2
+
+* Mon Sep 06 2010 Funda Wang <fwang@mandriva.org> 1.3.1-1mdv2011.0
++ Revision: 576254
+- BR gtk for setup module
+- new version 1.3.1
+
+* Mon Apr 26 2010 Funda Wang <fwang@mandriva.org> 1.3.0-1mdv2010.1
++ Revision: 538853
+- new version 1.3.0
+
+* Thu Dec 17 2009 Funda Wang <fwang@mandriva.org> 1.2.0.20091217-1mdv2010.1
++ Revision: 479624
+- new version 1.2.0.20091217
+
+* Sat Nov 21 2009 Funda Wang <fwang@mandriva.org> 1.2.0.20091120-1mdv2010.1
++ Revision: 467825
+- new version 1.2.0.20091120
+
+* Sun Nov 15 2009 Funda Wang <fwang@mandriva.org> 1.2.0.20090930-1mdv2010.1
++ Revision: 466178
+- update to new version 1.2.0.20090930
+
+* Mon Aug 03 2009 Funda Wang <fwang@mandriva.org> 1.2.0.20090617-1mdv2010.0
++ Revision: 408396
+- new version 1.2.0
+
+* Fri Feb 13 2009 Funda Wang <fwang@mandriva.org> 1.1.0.20090211-1mdv2009.1
++ Revision: 340005
+- New version 1.1.0.20090211
+
+* Sat Feb 07 2009 Funda Wang <fwang@mandriva.org> 1.1.0.20090205-2mdv2009.1
++ Revision: 338337
+- fix file list
+
+* Thu Feb 05 2009 Funda Wang <fwang@mandriva.org> 1.1.0.20090205-1mdv2009.1
++ Revision: 337954
+- python is of no use
+- New version 1.1.0.20090205
+
+* Thu Dec 25 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20081013-2mdv2009.1
++ Revision: 318672
+- rebuild for new python
+
+* Mon Oct 13 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20081013-1mdv2009.1
++ Revision: 293243
+- new version 0.1.1.20081013
+
+* Sat Oct 11 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20081009-1mdv2009.1
++ Revision: 292262
+- New version 20081009
+
+* Fri Sep 05 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20080901-1mdv2009.0
++ Revision: 281260
+- new version
+
+* Tue Aug 26 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20080823-3mdv2009.0
++ Revision: 276143
+- BR m17n-db
+
+* Mon Aug 25 2008 Funda Wang <fwang@mandriva.org> 0.1.1.20080823-1mdv2009.0
++ Revision: 275855
+- import ibus-m17n
+
+
