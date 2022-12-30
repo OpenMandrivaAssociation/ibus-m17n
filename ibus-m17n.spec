@@ -39,3 +39,4 @@ ibus - M17N engine.
 %{_datadir}/glib-2.0/schemas/org.freedesktop.ibus.engine.m17n.gschema.xml
 %{_datadir}/metainfo/m17n.appdata.xml
 %{_iconsdir}/hicolor/*x*/apps/ibus-m17n.png
+%{_iconsdir}/hicolor/scalable/apps/ibus-m17n.svg
