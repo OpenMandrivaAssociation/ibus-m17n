@@ -1,13 +1,13 @@
 Summary:	ibus - m17n engine
 Name:		ibus-m17n
-Version:	1.4.27
+Version:	1.4.28
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 URL:       https://github.com/ibus/ibus-m17n
 Source0:   https://github.com/ibus/ibus-m17n/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	m17n-db
-BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(ibus-1.0)
 BuildRequires:	pkgconfig(m17n-core)
 BuildRequires:  pkgconfig(m17n-db)
