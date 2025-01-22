@@ -37,6 +37,6 @@ ibus - M17N engine.
 %{_datadir}/ibus/component/*.xml
 %{_datadir}/applications/ibus-setup-m17n.desktop
 %{_datadir}/glib-2.0/schemas/org.freedesktop.ibus.engine.m17n.gschema.xml
-%{_datadir}/metainfo/m17n.appdata.xml
+%{_datadir}/metainfo/org.freedesktop.ibus.engine.m17n.metainfo.xml
 %{_iconsdir}/hicolor/*x*/apps/ibus-m17n.png
 %{_iconsdir}/hicolor/scalable/apps/ibus-m17n.svg
