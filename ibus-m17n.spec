@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		System/Internationalization
 URL:       https://github.com/ibus/ibus-m17n
 Source0:   https://github.com/ibus/ibus-m17n/releases/download/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	m17n-db
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(ibus-1.0)
