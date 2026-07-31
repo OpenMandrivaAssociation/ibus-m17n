@@ -1,6 +1,6 @@
 Summary:	ibus - m17n engine
 Name:		ibus-m17n
-Version:	1.4.36
+Version:	1.4.40
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
